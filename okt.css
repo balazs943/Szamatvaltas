@@ -20,7 +20,7 @@ body {
     width: 100%;
     min-width: 700px;
     max-width: 1500px;
-    /* text-align: center; */
+    text-align: center;
     min-height: 800px;
     backdrop-filter: blur(3px);
 }
@@ -64,24 +64,4 @@ padding-left: 3%;
 
 .feladat{
     margin: 5px;
-    margin-left: 35%;
-}
-
-
-#feladat1,#feladat2,#feladat3,#feladat4,#feladat5,#feladat6,#feladat7{
-
-width: 100px;
-margin-top: 3px;
-
-
-}
-.tarolo {
-    width: 100%;
-    align-items: left;
-}
-text{
-    right: 5px;
-}
-.feladat {
-    text-align: right;
 }
