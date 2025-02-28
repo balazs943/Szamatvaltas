@@ -1,0 +1,175 @@
+body {
+    font-family: Georgia, serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(hatter2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+}
+
+.keret {
+    margin: auto;
+    background: rgb(102, 255, 181);
+    background: linear-gradient(90deg, rgba(48, 255, 128, 0.816) 0%, rgb(0, 119, 64) 100%);
+    padding: 3%;
+    border-radius: 3%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    width: 90%;
+    max-width: 1500px;
+    min-width: 700px;
+    min-height: 800px;
+    backdrop-filter: blur(3px);
+}
+
+h2 {
+    text-align: left;
+    padding-top: 3%;
+}
+
+h3 {
+    font-size: 22px;
+    text-align: left;
+    padding-top: 2%;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+}
+
+.magyarazo {
+    text-align: left;
+    font-size: 130%;
+    padding: 1%;
+    padding-left: 3%;
+}
+
+.feladat {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+#feladat1, #feladat2, #feladat3, #feladat4, #feladat5, #feladat6, #feladat7 {
+    width: 100px;
+    margin-top: 3px;
+}
+
+
+text {
+    right: 5px;
+    font-size: 120%;
+}
+
+
+input {
+    width: 100px;
+    padding: 5px;
+    font-size: 1rem;
+}
+
+
+button {
+    padding: 5px 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #007740;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: 0.3s;
+
+}
+
+.tarolo{
+    margin-left: 5%;
+}
+
+.behuzas{
+
+margin-left: 12%;
+
+}
+
+button:hover {
+    background-color: #005c30;
+}
+
+
+/* === Reszponzív kialakítás === */
+
+/* Tabletekhez (max. 768px) */
+@media screen and (max-width: 768px) {
+    .keret {
+        width: 95%;
+        min-width: unset;
+        min-height: 600px;
+        padding: 5%;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+    .magyarazo {
+        font-size: 110%;
+        padding-left: 2%;
+    }
+
+    .feladat {
+        margin-left: 20%;
+        text-align: left;
+    }
+
+    #feladat1, #feladat2, #feladat3, #feladat4, #feladat5, #feladat6, #feladat7 {
+        width: 80px;
+    }
+}
+
+/* Mobiltelefonokhoz (max. 480px) */
+@media screen and (max-width: 480px) {
+    .keret {
+        width: 100%;
+        min-height: unset;
+        padding: 8%;
+        border-radius: 0;
+        margin-top: 10%;
+    }
+
+    h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    h2, h3 {
+        text-align: center;
+    }
+
+    .magyarazo {
+        font-size: 100%;
+        padding: 3%;
+        text-align: center;
+    }
+
+    .tarolo {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feladat {
+        margin: 5px 0;
+        text-align: center;
+    }
+
+    #feladat1, #feladat2, #feladat3, #feladat4, #feladat5, #feladat6, #feladat7 {
+        width: 70px;
+    }
+}
