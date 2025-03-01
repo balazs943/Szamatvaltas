@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hexadecimális Számrendszer</title>
+    <link rel="stylesheet" href="hex.css">
+    <script src="hex.js"></script>
+</head>
+<body>
+    
+<div class ="keret">
+
+<h1>Hexadecimális számrendszer</h1>
+
+<u><h2>Mi az a hexadecimális számrendszer?</h2></u>
+
+<div>
+
+<p class="magyarazo">A hétköznapi életben általában a tízes számrendszert alkalmazzuk, a hexadecimális rendszer a számítástechnikában és bizonyos matematikai területeken is elterjedt.</p>
+
+<p class="magyarazo">A hexadecimális számrendszer egy 16-os helyiértékű rendszer, melyben 16 különböző számjegyet használunk: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E és F.</p>
+
+<p class="magyarazo">Pontosan fogalmazva, hexadecimális számrendszernek nevezzük azt a rendszert, amely a 16-os csoportosításon alapul. Ha egy számot hexadecimális alakban írunk, akkor gyakran jelöljük úgy, hogy a szám jobb alsó sarkába odaírunk egy kis „16”-ot, vagy használjuk a „h” betűt.</p>
+
+
+</div>
+
+
+<u><h2>Hexadecimális számrendszer átváltása: hogyan működik?</h2></u>
+
+<div>
+
+<h3>Gyakorlati példa:</h3>
+
+<p class="magyarazo">
+    16-tal osztunk végig, és lejegyezzük a maradékokat.
+    <br><br>
+    2391 : 16 = 149, maradt 7 <br>
+    149 : 16 = 9, maradt 5 <br>
+    9 : 16 = 0, maradt 9 <br> 
+
+    <br>
+    A 2391 hexadecimális számrendszerbeli alakját úgy kapjuk meg, hogy a jobb oldali maradékos oszlopot visszafelé olvassuk: 9 5 7 
+</p>
+
+</div>
+
+
+
+<div>
+
+<u><h2>Feladat:</h2></u>
+<p class="magyarazo">Alakítsd át a következő decimális számrendszerben lévő számokat hexadecimálissá:</p>
+
+
+<div class="tarolo">
+<text class="feladat">10 =  </text><input type="text" id="feladat1"> <button onclick="funkcio()">Beküldés</button><div id="megoldas1"></div><br>
+<text class="feladat">764 =  </text><input type="text" id="feladat2"> <button onclick="funkcio2()">Beküldés</button><div id="megoldas2"></div><br>
+<text class="feladat">1564 =  </text><input type="text" id="feladat3"> <button onclick="funkcio3()">Beküldés</button><div id="megoldas3"></div><br>
+<text class="feladat">87457 =  </text><input type="text" id="feladat4"> <button onclick="funkcio4()">Beküldés</button><div id="megoldas4"></div><br>
+<text class="feladat">6 =  </text><input type="text" id="feladat5"> <button onclick="funkcio5()">Beküldés</button><div id="megoldas5"></div><br>
+<text class="feladat">1112323 =  </text><input type="text" id="feladat6"> <button onclick="funkcio6()">Beküldés</button><div id="megoldas6"></div><br>
+<text class="feladat">99999112999 =  </text><input type="text" id="feladat7"> <button onclick="funkcio7()">Beküldés</button><div id="megoldas7"></div><br>
+</div>
+
+</div>
+
+
+
+
+
+</div>
+
+</body>
+</html>
