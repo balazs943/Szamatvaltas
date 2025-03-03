@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Átváltó</title>
+    <link rel="stylesheet" href="projekt.css">
+    <script src="projekt.js"></script>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,
+    %3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E
+      %3Crect width='100' height='100' fill='%23007740'/%3E
+      %3Ctext x='50' y='60' font-family='Georgia' font-size='80' fill='%23ffffff' text-anchor='middle'%3E01%3C/text%3E
+    %3C/svg%3E">
+</head>
+<body>
+    
+
+    <div class="keret">
+        <h1>Számrendszer Átváltó</h1>
+        
+        <div class="bemenet-bekeres">
+            <label for="bemenet-bekertszam">Szám:</label>
+            <input type="text" id="bemenet-bekertszam" placeholder="Írj be egy számot">
+        </div>
+
+        <div class="kivalasztas-szekcio">
+
+        <div class="elso">
+
+            <label for="kiindulas">Kiinduló számrendszer:</label>
+            <select id="kiindulas">
+                <option value="2">Bináris</option>
+                <option value="10">Decimális</option>
+                <option value="8">Oktális</option>
+                <option value="16">Hexadecimális</option>
+            </select>
+
+        </div>
+        <div class="masodik">
+
+            <label for="cel">Cél számrendszer:</label>
+            <select id="cel">
+                <option value="2">Bináris</option>
+                <option value="10">Decimális</option>
+                <option value="8">Oktális</option>
+                <option value="16">Hexadecimális</option>
+            </select>
+
+        </div>
+
+        </div>
+
+        <button onclick="convert()">Átváltás</button>
+
+
+
+        <div class="kiiratas-szekcio">
+            <label for="bemenet-bekertszam">Eredmény:</label>
+            <input type="text" id="kiiratas-eredmeny" readonly>
+        </div>
+
+
+    </div>
+
+
+    <div id="nyiligazitas">
+        <div id="nyildoboz">
+            <a id="nyil" target="_blank" href="projekt2.html"> &#129094; </a>
+        </div>
+    </div>
+
+
+</body>
+</html>  

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oktális Számrendszer</title>
+    <link rel="stylesheet" href="okt.css">
+    <script src="okt.js"></script>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,
+    %3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E
+      %3Crect width='100' height='100' fill='%23007740'/%3E
+      %3Ctext x='50' y='60' font-family='Georgia' font-size='80' fill='%23ffffff' text-anchor='middle'%3E01%3C/text%3E
+    %3C/svg%3E">
+</head>
+<body>
+    
+<div class ="keret">
+
+<h1>Oktális számrendszer</h1>
+
+<u><h2>Mi az az oktális számrendszer?</h2></u>
+
+<div>
+
+<p class="magyarazo">Az oktális számrendszer (vagy más néven nyolcas számrendszer) a 8-as csoportosításon alapuló számrendszer.</p>
+
+<p class="magyarazo"> A hétköznapi életben – és a matematikaórán is – többnyire a tízes (decimális) számrendszert alkalmazzuk, ezért az oktális rendszerrel ritkábban találkozunk. Mégis fontos szerepe lehet a számítástechnikában és bizonyos régebbi rendszerekben (például Unix fájljogosultságok jelölésénél).</p>
+
+<p class="magyarazo">Ebben a rendszerben a 0, 1, 2, 3, 4, 5, 6 és 7 számjegyeket használjuk.</p>
+
+
+
+</div>
+
+
+<u><h2>Oktális számrendszer átváltása: hogyan működik?</h2></u>
+
+<div>
+
+<h3>Gyakorlati példa:</h3>
+
+<p class="magyarazo">
+    Az átváltásnál osztással és a maradékok lejegyzésével haladunk, hasonlóan ahhoz, ahogy a kettes számrendszert átváltjuk. Az osztó most 8.
+    <br><br>
+    2391 : 8 = 298, maradt 7 <br>
+    298 : 8 = 37, maradt 2 <br>
+    37 : 8 = 4, maradt 5<br> 
+    4 : 8 = 0, maradt 4 <br> 
+    <br>
+    A 2391 oktális számrendszerbeli alakját úgy kapjuk meg, hogy a maradékokat visszafelé olvassuk: 4 5 2 7
+</p>
+
+</div>
+
+
+
+<div>
+
+<u><h2>1. Feladat:</h2></u>
+<p class="magyarazo">Alakítsd át a következő decimális számrendszerben lévő számokat oktálissá:</p>
+
+<div class="tarolo">
+    <text class="feladat">10 =  </text><input type="text" id="feladat1"> <button onclick="funkcio()">Beküldés</button><div id="megoldas1"></div><br>
+    <text class="feladat">764 =  </text><input type="text" id="feladat2"> <button onclick="funkcio2()">Beküldés</button><div id="megoldas2"></div><br>
+    <text class="feladat">1564 =  </text><input type="text" id="feladat3"> <button onclick="funkcio3()">Beküldés</button><div id="megoldas3"></div><br>
+    <text class="feladat">87457 =  </text><input type="text" id="feladat4"> <button onclick="funkcio4()">Beküldés</button><div id="megoldas4"></div><br>
+    <text class="feladat">6 =  </text><input type="text" id="feladat5"> <button onclick="funkcio5()">Beküldés</button><div id="megoldas5"></div><br>
+    <text class="feladat">1112323 =  </text><input type="text" id="feladat6"> <button onclick="funkcio6()">Beküldés</button><div id="megoldas6"></div><br>
+    <text class="feladat">99999112999 =  </text><input type="text" id="feladat7"> <button onclick="funkcio7()">Beküldés</button><div id="megoldas7"></div><br>
+    </div>
+
+
+</div>
+
+
+<div>
+
+    <u><h2>2. Feladat:</h2></u>
+    <p class="magyarazo">Válaszd ki a decimális számok oktális megfelelőjét:</p>
+    
+    
+    
+    <div class="igazitas">
+    
+    <p class="szamok2">5556</p>
+    
+    <button class="gombok" onclick="check('rossz', 'eredmeny')">7442</button>   <button class="gombok" onclick="check('jo', 'eredmeny')">12664</button>   <button class="gombok" onclick="check('rossz', 'eredmeny')">542</button>
+    <p id="eredmeny"></p>
+    </div>
+    
+    
+    <div class="igazitas">
+    
+        <p class="szamok2">163416</p>
+        
+        <button class="gombok" onclick="check2('rossz', 'eredmeny2')">754244</button>   <button class="gombok" onclick="check2('rossz', 'eredmeny2')">33534</button>   <button class="gombok" onclick="check2('jo', 'eredmeny2')">477130</button>
+        <p id="eredmeny2"></p>
+        </div>
+    
+    
+    <div class="igazitas">
+    
+        <p class="szamok2">9992</p>
+            
+        <button class="gombok" onclick="check3('rossz', 'eredmeny3')">10067</button>   <button class="gombok" onclick="check3('jo', 'eredmeny3')">23410</button>   <button class="gombok" onclick="check3('rossz', 'eredmeny3')">23140</button>
+        <p id="eredmeny3"></p>
+        </div>
+    
+    
+    </div>
+
+
+</div>
+
+</body>
+</html>

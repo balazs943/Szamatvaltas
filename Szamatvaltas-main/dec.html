@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decimális Számrendszer</title>
+    <link rel="stylesheet" href="dec.css">
+    <script src="dec.js"></script>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,
+    %3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E
+      %3Crect width='100' height='100' fill='%23007740'/%3E
+      %3Ctext x='50' y='60' font-family='Georgia' font-size='80' fill='%23ffffff' text-anchor='middle'%3E01%3C/text%3E
+    %3C/svg%3E">
+</head>
+<body>
+    
+<div class ="keret">
+
+<h1>Decimális számrendszer</h1>
+
+<u><h2>Mi az a decimális számrendszer?</h2></u>
+
+<div>
+
+<p class="magyarazo">A decimális számrendszer, más néven tízes számrendszer, a hétköznapi életben és a matematikaórán is használt rendszer.</p>
+
+<p class="magyarazo"> Ebben a rendszerben tíz különböző számjegyet alkalmazunk: 0, 1, 2, 3, 4, 5, 6, 7, 8 és 9.</p>
+
+<p class="magyarazo">Pontosan fogalmazva, decimális számrendszernek nevezzük azt a rendszert, amely a 10-es csoportosításon alapul. A számokat egyszerűen a számjegyek egymás után írásával fejezzük ki, mivel minden helyiérték a 10 hatványait képviseli.</p>
+
+
+</div>
+
+
+<u><h2>Decimális számrendszer átváltása: hogyan működik?</h2></u>
+
+<div>
+
+<h3>Gyakorlati példa:</h3>
+
+<p class="magyarazo">
+
+    <h4>Hexadecimális átváltás</h4>
+    A hexadecimális rendszerben az egyes számjegyek a 16 hatványait képviselik.
+    <br><br>
+
+    957 hex = 9 × 16² + 5 × 16¹ + 7 × 16⁰ <br>
+    957 hex = 9 × 256 + 5 × 16 + 7<br>
+    957 hex = 2304 + 80 + 7<br>
+    957 hex= 2391 <br>
+
+</p>
+
+
+<p class="magyarazo">
+
+    <h4>Oktális átváltás</h4>
+    Az oktális rendszerben a számjegyek a 8 hatványait képviselik.
+    <br><br>
+
+    4527 okt = 4 × 8³ + 5 × 8² + 2 × 8¹ + 7 × 8⁰<br>
+    4527 okt = 4 × 512 + 5 × 64 + 2 × 8 + 7<br>
+    4527 okt = 2048 + 320 + 16 + 7<br>
+    4527 okt = 2391 <br>
+
+</p>
+
+
+
+<p class="magyarazo">
+
+    <h4>Bináris átváltás</h4>
+    A bináris rendszerben az egyes helyiértékek a 2 hatványait jelentik.
+    <br><br>
+
+    100101010111 bin = 1 × 2¹¹ + 0 × 2¹⁰ + 0 × 2⁹ + 1 × 2⁸ + 0 × 2⁷ + 1 × 2⁶ + 0 × 2⁵ + 1 × 2⁴ + 0 × 2³ + 1 × 2² + 1 × 2¹ + 1 × 2⁰ <br>
+    100101010111 bin = 2048 + 0 + 0 + 256 + 0 + 64 + 0 + 16 + 0 + 4 + 2 + 1 <br>
+    100101010111 bin = 2391<br>
+
+</p>
+
+
+
+</div>
+
+
+
+<div>
+
+<u><h2>1. Feladat:</h2></u>
+<p class="magyarazo">Alakítsd át a következő oktális, hexadecimális, bináris számrendszerben lévő számokat decimálissá:</p>
+
+
+<div class="tarolo">
+
+<p class="magyarazo"> Bináris:</p>
+
+<div class="behuzas">
+
+<text class="feladat">1010 =  </text><input type="text" id="feladat1"> <button onclick="funkcio()">Beküldés</button><div id="megoldas1"></div>
+<br>
+<text class="feladat">1011111100 =  </text><input type="text" id="feladat2"> <button onclick="funkcio2()">Beküldés</button><div id="megoldas2"></div>
+<br>
+<text class="feladat">11000011100 =  </text><input type="text" id="feladat3"> <button onclick="funkcio3()">Beküldés</button><div id="megoldas3"></div>
+</div>
+
+<br><br>
+
+<p class="magyarazo"> Oktális:</p>
+
+<div class="behuzas">
+
+<text class="feladat">252641 =  </text><input type="text" id="feladat4"> <button onclick="funkcio4()">Beküldés</button><div id="megoldas4"></div>
+<br>
+<text class="feladat">6 =  </text><input type="text" id="feladat5"> <button onclick="funkcio5()">Beküldés</button><div id="megoldas5"></div>
+<br>
+<text class="feladat">4174403 =  </text><input type="text" id="feladat6"> <button onclick="funkcio6()">Beküldés</button><div id="megoldas6"></div>
+</div>
+
+<br><br>
+
+<p class="magyarazo">Hexadecimális:</p>
+
+<div class="behuzas">
+
+<text class="feladat">1748695F27 =  </text><input type="text" id="feladat7"> <button onclick="funkcio7()">Beküldés</button><div id="megoldas7"></div>
+<br>
+<text class="feladat">2F3 =  </text><input type="text" id="feladat8"> <button onclick="funkcio8()">Beküldés</button><div id="megoldas8"></div>
+<br>
+<text class="feladat">A7B =  </text><input type="text" id="feladat9"> <button onclick="funkcio9()">Beküldés</button><div id="megoldas9"></div>
+</div>
+
+
+</div>
+
+</div>
+
+<div>
+
+    <u><h2>2. Feladat:</h2></u>
+    <p class="magyarazo">Válaszd ki a bináris, oktális és hexadecimális számok <b>decimális</b> megfelelőjét: </p>
+    
+    
+    
+    <div class="igazitas">
+    <p class="nagyobbitas">Bináris</p>
+    <p class="szamok2">111001001101</p>
+    
+    <button class="gombok" onclick="check('rossz', 'eredmeny')">78534</button>   <button class="gombok" onclick="check('jo', 'eredmeny')">3361</button>   <button class="gombok" onclick="check('rossz', 'eredmeny')">7765</button>
+    <p id="eredmeny"></p>
+    </div>
+    
+    
+    <div class="igazitas">
+        <p class="nagyobbitas">Oktális</p>
+        <p class="szamok2">635615</p>
+        
+        <button class="gombok" onclick="check2('jo', 'eredmeny2')">211853</button>   <button class="gombok" onclick="check2('rossz', 'eredmeny2')">56473</button>   <button class="gombok" onclick="check2('rossz', 'eredmeny2')">76164</button>
+        <p id="eredmeny2"></p>
+        </div>
+    
+    
+    <div class="igazitas">
+        <p class="nagyobbitas">Hexadecimális</p>
+        <p class="szamok2">42138</p>
+            
+        <button class="gombok" onclick="check3('jo', 'eredmeny3')">4330383</button>   <button class="gombok" onclick="check3('rossz', 'eredmeny3')">64532</button>   <button class="gombok" onclick="check3('rossz', 'eredmeny3')">765433</button>
+        <p id="eredmeny3"></p>
+        </div>
+    
+    
+    </div>
+
+
+
+
+
+</div>
+
+</body>
+</html>
